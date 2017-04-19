@@ -1,0 +1,61 @@
+<html>
+<head>
+<script language="javascript" src="js/monJS.js"></script>
+</head>
+<body>
+<input type="button" value="Liste des hospitalisations" onClick="envoyerFormulaire(formListe);">
+<form name="formListe" action="gestionHospitalisations.php" method="post">
+   <input type="hidden" name="monAction" value="obtenirListe">
+</form>
+
+<input type="button" value="Liste par établissement" onClick="divVisible('divListeEtab');">
+<div id="divListeEtab" name="divListeEtab" style="visibility:hidden;position:absolute;top:20%;left:10%;">
+<form name="formListeEtab" action="gestionHospitalisations.php" method="post">
+   Code établissement : <input type="text" id="codeE" name="codeE">
+   <input type="hidden" name="monAction" value="obtenirListeEtab">
+   <input type="button" value="Envoyer" onClick="envoyerFormulaire(formListeEtab);">
+   <img src="images/fermer.png" onClick="divInvisible('divListeEtab')">
+</form>
+</div>
+</br></br>
+<input type="button" value="Admettre patient" onClick="divVisible('divAdmission');">
+<div id="divAdmission" name="divAdmission" style="visibility:hidden;position:absolute;top:20%;left:10%;">
+<form name="formAdmission" action="gestionHospitalisations.php" method="post">
+   Code établissement : <input type="text" id="codeA" name="codeA"></br>
+   Dossier : <input type="text" id="dossier" name="dossier"></br>
+   Date admission : <input type="text" id="dateA" name="dateA"></br>
+   Date sortie : <input type="text" id="dateS" name="dateS"></br>
+   Spécialité : <input type="text" id="spec" name="spec"></br>
+   Type chambre : <input type="text" id="chambre" name="chambre"></br>
+   
+   <input type="hidden" name="monAction" value="admission">
+   <input type="button" value="Envoyer" onClick="envoyerFormulaire(formAdmission);">
+   <img src="images/fermer.png" onClick="divInvisible('divAdmission')">
+</form>
+</div>
+<br><br>
+<input type="button" value="Supprimer un patient" onClick="divVisible('divSupprimer');">
+<div id="divSupprimer" name="divSupprimer" style="visibility:hidden;position:absolute;top:20%;left:30%;">
+<form name="formSupprimer" action="gestionHospitalisations.php" method="post">
+   Code établissement : <input type="text" id="codeS" name="codeS"></br>
+   Dossier : <input type="text" id="dossier" name="dossier">
+   <input type="hidden" name="monAction" value="supprimer">
+   <input type="button" value="Envoyer" onClick="envoyerFormulaire(formSupprimer);">
+   <img src="images/fermer.png" onClick="divInvisible('divSupprimer')">
+</form>
+</div>
+
+<br><br>
+<input type="button" value="Modifier" onClick="divVisible('divModifier');">
+<div id="divModifier" name="divModifier" style="visibility:hidden;position:absolute;top:20%;left:30%;">
+<form name="formModifier" action="gestionHospitalisations.php" method="post">
+   Code établissement : <input type="text" id="codeM" name="codeM"></br>
+   Dossier : <input type="text" id="dossier" name="dossier">
+   <input type="hidden" name="monAction" value="modifier">
+   <input type="hidden" name="etat" value="rechercher">
+   <input type="button" value="Envoyer" onClick="envoyerFormulaire(formModifier);">
+   <img src="images/fermer.png" onClick="divInvisible('divModifier')">
+</form>
+</div>
+</body>
+</html>

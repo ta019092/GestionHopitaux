@@ -1,0 +1,20 @@
+code établissement;no dossier patient;date admission;date sortie;spécialité;type chambre
+
+
+1234;14;1992-12-12;1992-12-12;chirurgie;salle
+2346;8;2003-03-03;2003-03-05;médecine;salle
+2346;11;1997-11-11;1997-11-12;orthopédie;salle
+2346;15;1995-04-12;1995-04-30;médecine;semi-privée
+3980;6;1995-04-03;1995-04-08;orthopédie;privée
+3980;17;1999-11-27;1999-12-04;chirurgie;privée
+3980;20;1997-04-28;1997-05-05;chirurgie;privée
+4177;3;2001-08-03;2001-12-05;médecine;semi-privée
+4177;3;2002-02-02;2002-02-23;orthopédie;semi-privée
+7306;2;1998-05-23;1998-05-27;orthopédie;salle
+7306;11;2003-02-01;2003-02-05;obstétrique;semi-privée
+7306;12;2004-03-19;9999-12-31;chirurgie;semi-privée
+8895;5;1995-04-04;1995-05-05;obstétrique;salle
+8895;6;1996-07-31;1996-08-02;chirurgie;semi-privée
+8895;14;2002-03-01;2002-03-20;chirurgie;privée
+1234;5;2000-08-14;2001-08-14;ssasasa;werwrweqrwe
+3980;5;2000-02-14;2000-03-14;AAAAAAAAA;BBBBBBBBBBBBBB
