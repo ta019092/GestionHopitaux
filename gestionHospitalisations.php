@@ -8,10 +8,9 @@ function listeHospitalisationsText(){
 		exit;
 	}
 	//echo "Taille du fichier = ".filesize("hospitalisations.txt");
-	//other comment
 	$entete=array();
 	$ligne=fgets($fichier);
-	$entete=explode(":",$ligne);
+	$entete=explode(";",$ligne);
 	$etat=1;
 	while(!feof($fichier)){
 		if ($etat==2){
